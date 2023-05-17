@@ -1,0 +1,145 @@
+
+#TOC {
+  background: url("https://www.dropbox.com/s/o3i4qagn14gc0nb/logo_avsi.png?dl=1");
+background-size: contain;
+padding-top: 190px !important;
+background-repeat: no-repeat;
+border: 0;
+color: #808080;
+  }
+
+
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400');
+
+body{ /* Normal  */
+    font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:200;
+}
+
+.figure {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.wrapping {
+  float: right;
+  shape-outside: url("ad.png");
+  shape-margin: 10px;
+  width: 40%;
+}
+
+#fig-structure > figure > figcaption {
+  float: left;
+  clear: both;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px !important;
+}
+
+h1.title {
+  margin-top: 10px;
+  font-size: 55px;
+  color: #006db0;
+    font-family: 'Poppins', sans-serif;
+  font-weight:700;
+}
+
+h3.subtitle {
+  font-size: 40px;
+  color: #A9A9A9;
+    font-family: 'Poppins', sans-serif;
+  font-weight:800;
+  font-style: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+
+h1 {
+  font-size: 40px;
+  color: #008a2e;
+    font-family: 'Poppins', sans-serif;
+  font-weight:900;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #008a2e;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-weight:700;
+}
+
+td {
+  font-size: 15px;
+  font-family: 'Anonymous Pro';
+}
+
+code.r {
+  font-size: 15px;
+  font-family: 'Anonymous Pro';
+}
+
+pre {
+  font-size: 15px;
+  font-family: 'Anonymous Pro';
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+
+div.main-container {
+  max-width: 1200px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p
+{
+  margin-left: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+}
+
+hl {
+  background-color: #FFC20E;
+}
+
+in {
+  color: #F37021;
+}
+
+/* unvisited link */
+  a:link {
+    color: #006db0;
+  }
+
+/* visited link */
+  a:visited {
+    color: #006db0;
+  }
+
+/* mouse over link */
+  a:hover {
+    color: #006db0;
+  }
+
+/* selected link */
+  a:active {
+    color: #006db0;
+  }
+
+p, ul{
+     padding-top:10px;
+     margin:0;
+     list-style-position: inside;
+}

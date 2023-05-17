@@ -18,6 +18,7 @@ format:
 
 ```{r, include=FALSE}
 library(countdown)
+library(tidyverse)
 ```
 
 
@@ -65,12 +66,12 @@ tinyurl.com/avsiday2
 ::: {.column width="90%"}
 | Time      | Topic                                      |
 |-----------|:-------------------------------------------|
-| 1:00-2:00 | Lunch 🥘                                   |
-| 2:00-3:00 | Data visualization and thinking about data |
+| 1:00-2:15 | Lunch 🥘                                   |
+| 2:15-3:00 | Introduction to R and visualization        |
 | 3:00-3:15 | ☕️ Coffee/tea break                        |
-| 3:15-4:00 | Data Wrangling                             |
+| 3:15-4:00 | Reproducible reporting                     |
 | 4:00-4:15 | ☕️ Coffee/tea break                        |
-| 4:15-5:00 | Reproducible reporting                     |
+| 4:15-5:00 | Data wrangling basics                      |
 :::
 :::
 
@@ -78,12 +79,105 @@ tinyurl.com/avsiday2
 
 Available for 1-on-1s or small group consultation
 
-# [Data Visualization]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+
+# [Why R?]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+## Complete Pipeline
+
+![](img/cycle.png)
+
+## Advantages
+
+1. Free
+2. Widely used = tons of resources
+3. Access data from anywhere
+4. Can run any analysis you can think up
+5. Reproducible reporting in many formats
+
+# [Plotting with R]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+## Grammar of Graphics
+
+<div style= "float:left;position: relative; top: -20px;left: -40px;">
+<img src="img/wilkinson.jpg" style="border: 0;">
+</div>
+
+`{ggplot2}` implements the Leland Wilkinson's "grammar of graphics". Wickham (2010) describes the grammar of graphics as: 
+
+"...a tool that enables us to concisely describe the components of a graphic. Such a grammar allows us to move beyond named graphics (e.g., the "scatterplot") and gain insight into the deep structure that underlies statistical graphics."
+
+## What are the key components of this plot? {.smaller}
+
+![](img/ft2.png)
+
+##
+
+![](img/thomas_ggplot.png)
+
+<span style="font-size: 50%;">Source: Thomas Lin Pederson. Amazing workshop on `ggplot2`: https://github.com/thomasp85/ggplot2_workshop</span>
+
+##
+
+![](img/ggplot_gif.gif)
+
+<span style="font-size: 50%;">Source: Thomas de Beus, https://tinyurl.com/sf8zude</span>
+
+## Tutorial 1: [ghr.link/tutorial1](https://posit.cloud/learn/primers/1.1)
 
 
 
+![](img/ggplot_tutorial.png)
 
+
+## ☕️ Coffee/tea break
+
+![](img/amt2.png)
+
+[tinyurl.com/avsiday2](https://tinyurl.com/avsiday2)
+
+# [Reproducible Reporting]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+## Head over to Posit Cloud
+
+If you have not done so yet, signup for a [Posit Cloud Free account](https://ghr.link/g2r-cloud) and join our workspace.
+<br>
+
+<center>
+![](img/g2r-cloud.png)
+<br>
+ghr.link/g2r-cloud
+</center>
+
+## ☕️ Coffee/tea break
+
+![](img/amt2.png)
+
+[tinyurl.com/avsiday2](https://tinyurl.com/avsiday2)
+
+
+# [Data Wrangling Basics]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+
+## Head over to Posit Cloud
+
+If you have not done so yet, signup for a [Posit Cloud Free account](https://ghr.link/g2r-cloud) and join our workspace.
+<br>
+
+<center>
+![](img/g2r-cloud.png)
+<br>
+ghr.link/g2r-cloud
+</center>
 
 # [Thank You! 🙏]{style="color:white; font-size:125%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
 
 ## Resources
+
+[R for Data Science](https://r4ds.had.co.nz/index.html) by Hadley Wickham and Garrett Grolemund
+
+Kieran Healy’s book [Data Visualization](https://socviz.co/)
+
+[R cheatsheets](https://posit.co/resources/cheatsheets/)
+
+Other beginner resources [here](https://education.rstudio.com/learn/beginner/)
