@@ -1,1 +1,1 @@
-# g2r_with_R
+Workshop materials for the G2R program.
