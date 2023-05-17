@@ -11,7 +11,7 @@ format:
     slide-number: c/t
     incremental: true
     title-slide-attributes:
-      data-background-image: /img/title.png
+      data-background-image: img/title.png
       data-background-size: contain
       data-background-opacity: "1"
 ---
