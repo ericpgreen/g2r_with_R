@@ -20,7 +20,7 @@ format:
 library(countdown)
 ```
 
-## [tinyurl.com/avsiday1](https://tinyurl.com/avsiday2)
+## [tinyurl.com/avsiday2](https://tinyurl.com/avsiday2)
 
 ![](img/amt2.png)
 
