@@ -181,3 +181,9 @@ Kieran Healy’s book [Data Visualization](https://socviz.co/)
 [R cheatsheets](https://posit.co/resources/cheatsheets/)
 
 Other beginner resources [here](https://education.rstudio.com/learn/beginner/)
+
+## Notes
+
+Access to the cloud version of R/Rstudio will end after the workshop. To continue learning, follow [these instructions](https://posit.co/download/rstudio-desktop/) to download/install R and RStudio on your computer.
+
+You can find the workshop files [here](https://github.com/ericpgreen/g2r_with_R).

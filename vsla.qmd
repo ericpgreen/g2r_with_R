@@ -1,0 +1,124 @@
+---
+title: "Reproducible Reports with R"
+subtitle: "VSLA Example"
+author: "Your Name Here"
+format:
+  html: 
+    embed-resources: true
+    smooth-scroll: true
+    theme: cosmo
+    fontcolor: black
+    toc: true
+    toc-expand: 2
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 3
+css: css-report.css
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# load packages
+  library(tidyverse)
+```
+
+# Introduction
+
+This document has three objectives:
+
+1. Demonstrate how to create a report.
+2. Discuss how to redesign one of the M&E slides
+3. Practice using `{ggplot2}` to create a new plot
+
+# Quarto Reports
+
+Let's talk about Quarto and reproducible reports!
+
+# Example Slide
+
+This is one of the slides that Solomon presented yesterday. It shows the number of households that participated in VSLA trainings in the first quarter of 2023.
+
+
+![Original VSLA slide](vsla-old.png)
+
+## Slide Redesign
+
+This is our goal:
+
+![](vsla.png)
+
+We won't focus on how to prepare the data today. Normally we'd connect to a database or import a file with the raw data, wrangle the data a bit, and then plot. We'll skip to the last part. Here's the processed data that we'll plot:
+
+```{r}
+#| label: vsla
+#| include: true
+
+vsla <- tribble(
+  ~subcounty, ~category, ~target_f, ~actual_f, ~target_m, ~actual_m,
+  "Biguli", "Host", 613, 477, 23, 22,
+  "Biguli Town Council", "Host", 361, 250, 9, 9,
+  "Bihanga", "Host", 353, 350, 22, 22,
+  "Bwizi", "Host", 835, 492, 50, 26,
+  "Lyakahungu Town Council", "Host", 125, 115, 10, 10,
+  "Nkoma", "Host", 674, 355, 46, 19,
+  "Nkoma Katalyeba", "Host", 343, 280, 16, 16,
+  "Nkoma (Refugee)", "Refugee", 3225, 1617, 147, 119
+) %>%
+  mutate(target_t = target_m + target_f,
+         actual_t = actual_m + actual_f,
+         p_t = actual_t/target_t)
+
+vsla
+
+vsla_o <- vsla %>%
+  summarize(target = sum(target_t),
+            actual = sum(actual_t),
+            p = actual/target)
+
+vsla_h <- vsla %>%
+  filter(category=="Host") %>%
+  summarize(target = sum(target_t),
+            actual = sum(actual_t),
+            p = actual/target)
+```
+
+# Plot
+
+Every plot starts with the data AND THEN the plot command:
+
+```{r}
+#| label: plot1
+
+vsla %>%
+  ggplot(aes(x = p_t, y = fct_reorder(subcounty, p_t), 
+             fill = category,
+             label = actual_t)) +
+  geom_col() +
+  scale_x_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values=c("#006db0", "#008a2e")) +
+  theme_minimal() +
+  theme(legend.position = "none",
+        plot.title.position = "plot",
+        plot.title = element_text(face="bold"),
+        plot.caption = element_text(size=7)) +
+  labs(x = NULL, y = NULL,
+       title = "6 in 10 target households participated in VSLA trainings",
+       subtitle = "2023 Q1",
+       caption = str_wrap("Percentage represents the actual/target households participating in VSLA trainings. The number at the end of each bar indicates the count of the actual households participating.", 120)) +
+  geom_vline(xintercept = vsla_o$p) +
+  geom_text(hjust = 1, size=3, color="white") +
+  annotate("text", x = vsla_o$p, y=2, 
+           label = paste0("Overall ", round(vsla_o$p*100, 0), "%"),
+           hjust = 0)
+```
+
+But this code does not do much. It just tells R that we want a plot. Let's build the plot together.
+
+```{r}
+#| label: plot2
+
+vsla %>%
+  ggplot() 
+```
