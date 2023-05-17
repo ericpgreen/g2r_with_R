@@ -1,0 +1,54 @@
+---
+title: "2023 Methods Training"
+subtitle: "Day 2: Introduction to R for Data Visualization and Analysis"
+author:
+  - Eric Green
+  - Eve Puffer
+format: 
+  revealjs:
+    multiplex: true
+    theme: [custom.scss]
+    slide-number: c/t
+    incremental: true
+    title-slide-attributes:
+      data-background-image: /img/title.png
+      data-background-size: contain
+      data-background-opacity: "1"
+---
+
+```{r, include=FALSE}
+library(countdown)
+```
+
+## [tinyurl.com/avsiday1](https://tinyurl.com/avsiday2)
+
+![](img/amt2.png)
+
+## Today's Agenda
+
+::: columns
+::: {.column width="90%"}
+| Time      | Topic                                      |
+|-----------|:-------------------------------------------|
+| 1:00-2:00 | Lunch 🥘                                   |
+| 2:00-3:00 | Data visualization and thinking about data |
+| 3:00-3:15 | ☕️ Coffee/tea break                        |
+| 3:15-4:00 | Data Wrangling                             |
+| 4:00-4:15 | ☕️ Coffee/tea break                        |
+| 4:15-5:00 | Reproducible reporting                     |
+:::
+:::
+
+## Tomorrow 🤝
+
+Available for 1-on-1s or small group consultation
+
+# [Data Visualization]{style="color:white; font-size:200%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+
+
+
+
+# [Thank You! 🙏]{style="color:white; font-size:125%;"} {background="linear-gradient(0deg, #006db0, #008a2e)"}
+
+## Resources
