@@ -20,9 +20,44 @@ format:
 library(countdown)
 ```
 
-## [tinyurl.com/avsiday2](https://tinyurl.com/avsiday2)
+
+## Yesterday's Homework
+
+::: columns
+::: {.column width="33.3%"}
+
+<center>
+Sign up for a [Posit Cloud Free account](https://ghr.link/g2r-cloud) and join our workspace
+<br>
+
+![](img/g2r-cloud.png)
+<br>
+ghr.link/g2r-cloud
+</center>
+:::
+
+::: {.column width="33.3%"}
+<center>
+Follow [these instructions](https://posit.co/download/rstudio-desktop/) to download/install R and RStudio
+
+![](img/rsd.png)
+<br>
+ghr.link/rsd
+</center>
+:::
+::: {.column width="33.3%"}
+<center>
+[Today's slide deck](https://tinyurl.com/avsiday2) 
+(gives you easy access to these links)
+
 
 ![](img/amt2.png)
+<br>
+tinyurl.com/avsiday1
+</center>
+:::
+:::
+
 
 ## Today's Agenda
 
